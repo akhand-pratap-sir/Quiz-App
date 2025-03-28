@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0056b3;
+    background-image: url('backgroundPics.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Increased Size of Quiz Container */
+.quiz-container {
+    max-width: 700px; /* Increased from 500px to 700px */
+    background: rgb(13, 79, 32); /* Semi-transparent white background */
+    padding: 30px; /* More padding */
+    margin: 80px auto; /* Centered with more margin */
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 12px; /* Slightly bigger buttons */
+    margin: 8px 0;
+    border: none;
+    background: #3e86d49d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#options button:hover {
+    background: #0056b3;
+}
+
+#next-btn {
+    margin-top: 15px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#next-btn:hover {
+    background: #218838;
+}
+
+#timer {
+    font-size: 1.4em; /* Slightly bigger timer */
+    margin: 15px 0;
+    color: #dc3545;
+}
+
+.incorrect {
+    background-color: red !important;
+    color: white !important;
+    animation: shake 0.3s ease;
+}
+
+.correct {
+    background-color: green !important;
+    color: white !important;
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
